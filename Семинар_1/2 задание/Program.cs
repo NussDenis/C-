@@ -11,18 +11,11 @@ int max = b;
 int min = c;
 if(a > max){
     max = a;
-    min = b;
-}
-else{
+   }
+else if(b > max){
     max = b;
-    min = a;
-}
-if(c > max)
-{
+   }
+else if(c > max){
     max = c;
 }
-else if(c < min){
-    min = c;
-}
 Console.WriteLine($"{max} = max");
-Console.WriteLine($"{min} = min");
