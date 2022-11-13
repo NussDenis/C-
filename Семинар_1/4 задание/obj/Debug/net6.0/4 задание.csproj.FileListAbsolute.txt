@@ -1,0 +1,15 @@
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\bin\Debug\net6.0\4 задание.exe
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\bin\Debug\net6.0\4 задание.deps.json
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\bin\Debug\net6.0\4 задание.runtimeconfig.json
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\bin\Debug\net6.0\4 задание.dll
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\bin\Debug\net6.0\4 задание.pdb
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\4 задание.csproj.AssemblyReference.cache
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\4 задание.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\4 задание.AssemblyInfoInputs.cache
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\4 задание.AssemblyInfo.cs
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\4 задание.csproj.CoreCompileInputs.cache
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\4 задание.dll
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\refint\4 задание.dll
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\4 задание.pdb
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\4 задание.genruntimeconfig.cache
+C:\Users\Нусс\Desktop\GeekBrains\C#\Семинар_1\4 задание\obj\Debug\net6.0\ref\4 задание.dll
