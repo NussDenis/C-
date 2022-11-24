@@ -65,7 +65,7 @@ void Zadacha30()
     int[] numbers = new int[size];
     for (int i = 0; i < size; i++)
     {
-        numbers[i] = rand.Next(0, 2);
+        numbers[i] = rand.Next(0, 15);
     }
     for (int i = 0; i < size; i++)
     {
