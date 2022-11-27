@@ -10,7 +10,8 @@ void Zadacha25()
     int a = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите степень числа");
     int b = Convert.ToInt32(Console.ReadLine());
-    if (a > 0) Console.WriteLine($"Число {a} в степени {b} = {Math.Pow(a, b)}");
+    if (b == 0) Console.WriteLine($"Число {a} в степени {b} = {a}");
+    else if (a > 0) Console.WriteLine($"Число {a} в степени {b} = {Math.Pow(a, b)}");
     else Console.WriteLine("Вы ввели не натуральное число");
 }
 
@@ -25,10 +26,10 @@ void Zadacha27()
     Console.Write("Введите число - ");
     int number = Convert.ToInt32(Console.ReadLine());
     int sum = 0;
-    while (number > 9)
+    while (number > 0)
     {
-        sum = sum + number % 10;
-        number = number / 10;
+        sum += number % 10;
+        number /= 10;
     }
     Console.Write("Сумма всех цифр в введенном числе = " + (sum + number));
 }
@@ -58,6 +59,6 @@ void Zadacha29()
     for (int i = 0; i < size; i++) Console.Write(array[i] + " ");
 }
 
-// Zadacha25();
+Zadacha25();
 // Zadacha27();
 // Zadacha29();
