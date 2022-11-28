@@ -8,19 +8,18 @@
         nums[i] = rand.Next(minValue, maxValue);
     }
 }
-void FillArrayDouble(double[] nums, int minValue, int maxValue)
+void FillArrayDouble(double[] nums)
 {
-    maxValue++;
     Random rand = new Random();
     double length = nums.Length;
     for (int i = 0; i < length; i++)
     {
-        nums[i] = rand.Next(minValue, maxValue);
+        nums[i] = Convert.ToDouble(rand.Next(-500, 500)/100.0) ;
     }
 }
 void PrintArray(int[] nums)
 {
-    int length = nums.Length;
+    double length = nums.Length;
     Console.WriteLine("Вывод массива: ");
     for (int i = 0; i < length; i++)
     {
@@ -57,7 +56,7 @@ void Zadacha34()
     }
     Console.WriteLine("Колличество чётных числе в массиве - " + count);
 }
-// Zadacha34();
+
 
 // Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов с нечётными индексами.
 // [3, 7, 23, 12] -> 19
@@ -76,7 +75,6 @@ void Zadacha36()
     }
     Console.WriteLine("Сумма элементов с нечётными индексами в массиве - " + sum);
 }
-// Zadacha36();
 
 // Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
 // [3,21 7,04 22,93 -2,71 78,24] -> 80,95
@@ -86,7 +84,7 @@ void Zadacha38()
 {
     int size = 5;
     double[] numbers = new double[size];
-    FillArrayDouble(numbers, -10, 10);
+    FillArrayDouble(numbers);
     PrintArrayDouble(numbers);
     double min = 0;
     double max = 0;
@@ -99,6 +97,10 @@ void Zadacha38()
     {
         if (numbers[i] > max) max = numbers[i];
     }
-    Console.WriteLine($"Разница между максимальным и минимальным элементами маасива = {result = max - min}");
+    Console.WriteLine($"Разница между максимальным и минимальным элементами масcива = {result = max - min}");
 }
-Zadacha38();
+
+
+// Zadacha34();
+// Zadacha36();
+// Zadacha38();
