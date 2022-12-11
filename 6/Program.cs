@@ -12,10 +12,11 @@
         }
     }
 }
-void PrintArray(int[,] nums)
+void PrintArray(int[,] nums, string message = "Вывод массива:")
 {
     int rows = nums.GetLength(0);
     int columns = nums.GetLength(1);
+    Console.WriteLine(message);
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < columns; j++)
@@ -24,6 +25,7 @@ void PrintArray(int[,] nums)
         }
         Console.WriteLine();
     }
+    Console.WriteLine();
 }
 
 
@@ -125,9 +127,87 @@ void Zadacha51_2()
     for (int i = 0; i < min; i++)
     {
         {
-            sum += numbers[i,i];
+            sum += numbers[i, i];
         }
     }
-Console.WriteLine("Сумма элементов по диагонале = " + sum);
+    Console.WriteLine("Сумма элементов по диагонале = " + sum);
 }
-Zadacha51_2();
+// Zadacha51_2();
+
+
+// Задача 53: Задайте двумерный массив. Напишите программу,
+// которая поменяет местами первую и последнюю строку массива.
+void Zadacha53()
+{
+    int rows = 4;
+    int columns = 5;
+    int[,] numbers = new int[rows, columns];
+    FillArray(numbers, 0, 10);
+    PrintArray(numbers);
+    int i1 = 0;
+    int i2 = rows - 1;
+    for (int j = 0; j < columns; j++)
+    {
+        (numbers[i1, j], numbers[i2, j]) = (numbers[i2, j], numbers[i1, j]);
+    }
+    PrintArray(numbers);
+}
+// Zadacha53();
+
+// Задача 55: Задайте двумерный массив. Напишите программу, 
+// которая заменяет строки на столбцы. В случае, если это 
+// невозможно, программа должна вывести сообщение для 
+// пользователя.
+
+void Zadacha55()
+{
+    int rows = 4;
+    int columns = 4;
+    int[,] numbers = new int[rows, columns];
+    FillArray(numbers, 0, 10);
+    PrintArray(numbers);
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = i; j < columns; j++)
+        {
+            (numbers[i, j]) = (numbers[j, i]);
+        }
+    }
+    PrintArray(numbers);
+}
+// Zadacha55();
+
+// Задача 57: Составить частотный словарь элементов 
+// двумерного массива. Частотный словарь содержит 
+// информацию о том, сколько раз встречается элемент 
+// входных данных.
+
+void Zadacha57()
+{
+    int rows = 5;
+    int columns = 5;
+    int[,] numbers = new int[rows, columns];
+    FillArray(numbers, 0, 9);
+    PrintArray(numbers);
+    int[] dictionary = new int[10];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = i; j < columns; j++)
+        {
+            dictionary[numbers[i, j]]++;
+        }
+    }
+    PrintArrayOne(dictionary);
+}
+Zadacha57();
+
+static void PrintArrayOne(int[] number, string message = "Вывод массива:")
+{
+    int rows = number.Length;
+    Console.WriteLine(message);
+    for (int i = 0; i < rows; i++)
+    {
+        Console.WriteLine($"{number[i]}\t");
+    }
+    Console.WriteLine();
+}

@@ -71,18 +71,11 @@ void Zadacha50()
     int n = Convert.ToInt32(Console.ReadLine());
     Console.Write("Введите значение столбца - ");
     int m = Convert.ToInt32(Console.ReadLine());
-
-    for (int i = 0; i < rows; i++)
+    if (n < rows && m < columns)
     {
-        for (int j = 0; j < columns; j++)
-        {
-            if (i == n && j == m)
-            {
-                Console.Write($"Значение выбранного элемента в массиве = {numbers[i, j]}");
-            }
-        }
+        Console.Write($"Значение выбранного элемента в массиве = {numbers[n, m]}");
     }
-    if (rows <= n && columns <= m) Console.WriteLine("В массиве такой элемент отсутствует");
+    else Console.WriteLine("В массиве такой элемент отсутствует");
 }
 
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
