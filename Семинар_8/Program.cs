@@ -31,11 +31,10 @@
             }
         }
 
-        void PrintArray(int[,] nums, string message = "Вывод массива:")
+        void PrintArray(int[,] nums)
         {
             int rows = nums.GetLength(0);
             int columns = nums.GetLength(1);
-            Console.WriteLine(message);
             for (int i = 0; i < rows; i++)
             {
                 for (int j = 0; j < columns; j++)
@@ -133,14 +132,32 @@
             (numbers[2, 2], numbers[1, 2]) = (numbers[1, 2], numbers[2, 2]);
             (numbers[2, 1], numbers[2, 2]) = (numbers[2, 2], numbers[2, 1]);
             PrintArray(numbers);
+        }
 
-
-
+        // Задача 61: Задайте две матрицы. Напишите 
+        // программу, которая будет находить произведение 
+        // двух матриц.
+        void Zadacha61()
+        {
+            int rows1 = 2;
+            int columns1 = 3;
+            int[,] numbers1 = new int[rows1, columns1];
+            FillArray(numbers1, -10, 15);
+            Console.WriteLine("Матрица А");
+            PrintArray(numbers1);
+            Console.WriteLine();
+            Console.WriteLine("Матрица  B");
+            int rows2 = 3;
+            int columns2 = 3;
+            int[,] numbers2 = new int[rows2, columns2];
+            FillArray(numbers2, -10, 15);
+            PrintArray(numbers2);
 
 
         }
-        Zadacha54();
+        // Zadacha54();
         // Zadacha56();
         // Zadacha58();
+        Zadacha61();
     }
 }
